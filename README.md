@@ -35,17 +35,25 @@ The system includes
 Software interface Requirements
 
 •	Operating System : Windows
+
 •	Data Base : MySQL
+
 •	Language : PHP
+
 •	Framework : Laravel
 
 Objectives
 
    The purpose of the project is to transform the manual process of hospital management into a computerized system.
+   
 o	Doctor : With the help of this system,doctor can schedule his available time slot which will be visible for user.
+
 o	Admin : He can monitor all the activities by go through the system and he is the person who maintain the login details.He have the power to add doctors in the system.
+
 o	Patient : The patient can channel a particular doctor for his disease on his free time.
+
 o	Receptionist : Computerize the patient history and send the history to the doctor when the particular patient has an appointment.
+
 o	Pharmacist : Using this system,he can maintain the stock details and easy to update the stock if it is reduce than a particular amount.
 
 Problem Specifiction
@@ -59,11 +67,17 @@ In the case of a pharmacist,it is very difficult to maintain Medical history fil
 Conclusion
 
  The system will be designed in a way that,future modifications can be added easily.
+ 
 From the development of the project,
+
 	Updating the information become easier.
+
 	Easy to view the patient history when we want.
+
 	Can find the doctor at free time.
+
 	Easy to manage pharmacy stock details.
+
 	Provide a user-friendly interface,which is better than manual system.
 
 
