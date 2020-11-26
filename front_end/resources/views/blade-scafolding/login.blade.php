@@ -10,7 +10,7 @@
   }
 </style>
 <div id="login" class="form" >
-   <h3 class="text-center text-white pt-5">Welcome Back!</h3>
+   <h3 class="text-center text-white pt-5" style="font-weight: bold;">Welcome Back!</h3>
         <div class="container">
         
             <div id="login-row" class="row justify-content-center align-items-center">
@@ -27,13 +27,12 @@
                                 <input type="text" name="password" id="password" class="form-control">
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group" class="text-info">
                                 <p class="forgot"><a href="#">Forgot Password?</a></p>
-                                <button class="button button-block"/>Log In</button>
+                                <a href="/regi" id="reg-link">Register here</a></p>
+                                <button class="button button-right"/>Log In</button>
                             </div>
-                            <div id="register-link" class="text-right">
-                                <a href="/regi" class="text-info">Register here</a>
-                            </div>
+                            
                         </form>
                     </div>
                 </div>

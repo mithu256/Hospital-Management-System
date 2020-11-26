@@ -11,7 +11,6 @@
    <meta name="description" content="">
    <meta name="author" content="">
    
-   
    <!-- Site Icons -->
    <link rel="shortcut icon" href="<?php echo url('/'); ?>/images/fevicon.ico1.png" type="image/x-icon" />
    <link rel="apple-touch-icon1" href="<?php echo url('/'); ?>/images/apple-touch-icon1.png">
