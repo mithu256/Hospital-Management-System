@@ -5,12 +5,17 @@
 <style type="text/css">
   body {
     background-image:url('<?php echo url('/'); ?>/images/background/appo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
   }
 </style>
 
-<div id="patbutton" class="right-header" style="margin-right: 50px;">
+<div id="patbutton" class="right" style="margin-right: 12%;">
+    <div id="patbt">
     <a href="/patRecord"><button class="btn">My Records</button></a>
     <button class="btn" data-toggle="modal" data-target="#exampleModalCenter1">My Details</button>
+    <a href="/login"><span class="glyphicon glyphicon-log-out"></span>  Log-out</a>
+    </div>
 </div>
 <div id="home" class="form">
         <div class="container">
@@ -111,13 +116,12 @@
                                 <thead>
                                     <tr>
                                         <th width="60%">Doctor name</th>
-                                        <th width="20%">Time</th>
-                                        <th width="20%">Date</th>
+                                        <th width="30%">Time</th>
                                     </tr>
                                     <tr>
                                         <td></td>
                                         <td></td>
-                                        <td></td>
+                                        <td><a href="/channel" class="book"><button style="background-color: pink;">book </button></a></td>
                                     </tr>
                                 </thead>
                             </table>

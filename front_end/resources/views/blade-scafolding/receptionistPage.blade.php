@@ -7,13 +7,22 @@
   body {
     background-image:url('<?php echo url('/'); ?>/images/background/receipt.jpg');
   }
-
+  @media(max-width: 783px){
+    #ct1{
+        margin-left: 20%;
+        left: 20%;
+        margin-top: 10px;
+    }
+  }
 </style>
 <div id="recPage" class="container">
-    <div class="left">
+    <div id="patbutton" style="right: 1px;">
+      <div id="recbt">
         <button id="chat" class="btn btn left">Chat</button>
         <button id="chat" class="btn btn left">Time Table</button>
         <button id="chat" type="button" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn left">Appointment Details</button>
+        <a href="/login"><span class="glyphicon glyphicon-log-out"></span>  Log-out</a>
+      </div>
     </div>
     
     <div class="text-center" style="padding-top: 80px;"><h1>Add Appointment</h1></div>
@@ -48,7 +57,7 @@
         <div style="margin-top: 40px;">
         <input type="" name="" placeholder="Specialization" style="margin-left: 20%;">
         <input type="" name="" placeholder="Doctor Name" style="width: 20%;">
-        <input type="" name="" placeholder="Date">
+        <input  id="ct1" type="" name="" placeholder="Date">
         <button class="btn" style="background-color: #0080FF; color: black;">Search</button><br>
         <label style="margin-left: 20%; color: white;">Total of Appoinment: </label><a href=""></a>
       </div>

@@ -10,7 +10,7 @@
         <div class="container">
         
             <div id="cha-row" class="row justify-content-center align-items-center">
-                <div id="cha-column" class="col-md-6">
+                <div id="cha-column">
                     <div id="cha-box" class="col-md-12">
                         <form id="cha-form" class="form" action="" method="post">
 
@@ -52,7 +52,11 @@
                             <div id="note">
                             	* Your Appointment is done.
                             </div>
+                            
                         </form>
+                            <div class="right" style="color: blue; margin-bottom: 10px;">
+                                <a href="/patpage"><h3 style="color: blue;"><span class="glyphicon glyphicon-eye-open"></span> View Profile</h3></a>
+                            </div>
                     </div>
                 </div>
             </div>

@@ -325,6 +325,46 @@ a img.aligncenter {
     HEADER
 -------------------------------------------------------------------*/
 
+@media(max-width: 1000px) {
+    header #collapsable-nav {
+        margin-top: 60px;
+        background-color: #F8E0F7;
+        text-align: center;
+    }
+    header #collapsable-nav #l1{
+        border-top: 1px solid white;
+    }
+    header #collapsable-nav li:hover{
+        background-color: #F6CED8;
+    }
+    header #collapsable-nav ul{
+        border-top: 1px solid white;
+    }
+}
+@media (max-width: 1000px){
+    .navbar-default .navbar-toggle {
+         background-color: #F6CED8 !important; 
+    }
+}
+
+
+@media(min-width: 1001px) {
+    header #collapsable-nav {
+        margin-top: 15px;
+        margin-right: 45px;
+    }
+    header #collapsable-nav #l1{
+        background-color: #F5A9BC;
+    }
+    header #collapsable-nav #l2{
+        background-color: #F6CED8;
+    }
+    header #collapsable-nav #l3{
+        background-color: #A4A4A4;
+    }
+}
+
+
 /*.megamenu .nav,
 .megamenu .collapse,
 .megamenu .dropup,
@@ -1267,13 +1307,24 @@ body{
         margin-left: 50%;
     }
 }
+@media (max-width: 1200px) and (min-width: 993px){
+    #reg .container #reg-row #reg-column {
+        right: -25%;
+    }
+}
+@media (max-width: 992px && min-width: 930px){
+    #reg .container #reg-row #reg-column {
+        right: -8%;
+        left: 6%;
+    }
+}
 #reg .container #reg-row #reg-column #reg-box {
   margin-top: 30px;
   margin-bottom: 30px;
-  max-width: 600px;
-  height: 1330px;
+  max-width: 700px;
+  height: 1610px;
   border: 1px solid #9C9C9C;
-  background-color: #EAEAEA;
+  background-color: rgba(169,169,169,0.6) ;
 }
 #reg .container #reg-row #reg-column #reg-box #reg-form {
   padding: 20px;
@@ -1330,7 +1381,14 @@ label {
 
 @media (min-width: 1200px) {
     #channel .container #cha-row #cha-column #cha-box {
-        margin-left: 50%;
+        margin-left: 26%;
+        width: 50%;
+    }
+}
+@media (max-width: 1200px) and (min-width: 785px){
+    #channel .container #cha-row #cha-column {
+        margin-left: 20%;
+        width: 100%;
     }
 }
 #channel .container #cha-row #cha-column #cha-form {
@@ -1443,12 +1501,23 @@ label {
     width: 50%;
     margin: 10px 0 10px 30px;
 }
-#chat {
-    background-color: #04B431;
-    color: white;
-    margin-right: 30px;
-    outline-color: black;
-    border: 10px solid black;
+@media (min-width: 501px){
+    #chat {
+        background-color: #04B431;
+        color: white;
+        margin-left: 30px;
+        outline-color: black;
+        border: 10px solid black;
+    }
+}
+@media (max-width: 500px){
+    #chat {
+        background-color: #04B431;
+        color: white;
+        margin-left: 15px;
+        outline-color: black;
+        border: 10px solid black;
+    }
 }
 .print {
     background-color: #F5A9BC;
@@ -1460,11 +1529,55 @@ label {
     patientPage page
 -------------------------------------------------------------------*/
 
+#patbt{
+    width: 350px;   
+    margin-left: 60%;
+}
+/******receiptionist****/
+#recbt{
+    width: 550px;   
+    margin-left: 40%;
+}
+@media (max-width: 935px){
+    #recbt{  
+    margin-left: 20%;
+    }
+    #recbt #chat{  
+    margin-right: 1px;
+    }
+}/****** end receiptionist****/
+@media (max-width: 785px){
+    #patbt{
+        margin-left: 35%;
+    }
+}
+@media (max-width: 700px){
+    #recbt{
+        margin-left: 1%;
+    }
+}
+
+#patbutton {
+    width: 100%;
+    height: 45px;
+    top: 87px;
+    position: absolute;
+    align-self: right;
+    box-shadow: 3px 0 3px 0 #ccc;
+    background-color: rgba(169,169,169,0.6) ;
+}
+@media (min-width: 768px){
+    #patbutton {
+    top: 100px;
+}
+}
 #patbutton button {
      background-color: blue;
     color: white;
-    margin-right: 30px;
+    margin-right: 15px;
+    margin-top: 7px;
 }
+
 #exampleModalCenter1 h2 {
     padding: 0 0 0 0;
 }
@@ -1479,6 +1592,47 @@ label {
 }
 
 
+/*.dropdown1{
+    box-shadow: 3px 0 3px 0 #ccc;
+    background-color: white;
+    top: 105px;
+    overflow: hidden;
+    position: absolute;
+    left: 5px;
+    display: inline-block;
+    height: 100%
+  
+}
+.dropbtn1{
+    width: 40px;
+    height: 40px;
+}
+.dropbtn1:hover .dropdown-content1:hover {
+    display: block;
+}
+.dropdown-content1{
+    position: relative;
+    display: none;
+}
+.dropdown-content1 #col{
+    z-index: -1;
+    background-color: #E6E6E6;
+    line-height: 30px;
+    font-size: 20px;
+    height: 55px;
+    width: 200px;
+}
+.dropdown-content1 #col a{
+    bottom: 13px;
+}
+
+.dropdown-content1 #col:hover {
+    background-color: #D8D8D8;
+    display: block;
+}
+.dropdown1:hover .dropdown-content1 {
+    display: block; 
+}*/
 /*------------------------------------------------------------------
     receptionist search button page
 -------------------------------------------------------------------*/
@@ -1502,3 +1656,185 @@ label {
 #phar_table {
     margin-bottom: 0;
 }
+@media (min-width: 1125px){
+    #total {
+        margin-left: 68%; 
+        width: 32%;
+    }
+}
+@media (max-width: 1125px){
+    #total {
+        margin-left: 63%;
+        width: 37%;
+    }
+}
+@media (max-width: 960px){
+    #total {
+        margin-left: 50%;
+        width: 50%;
+    }
+}
+@media (max-width: 720px){
+    #total {
+        margin-left: 30%;
+        width: 70%;
+        margin-top: -17px;
+    }
+}
+
+/***************home register form********************/
+@media (max-width: 985px) {
+    #homeregist #form {
+        width: 80%;
+        margin-left: 40px;
+        margin-right: 5px;
+    }
+}
+@media (min-width: 985px) {
+    #myDIV #form {
+        width: 40%;
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 789px) {
+    #myDIV {
+        width: 70%;
+        top: 120px;
+        left: -1000px;
+        background-color: #00FF80;
+        position: absolute;
+        opacity: 3;
+        vertical-align: middle;
+        animation: drops 2s linear forwards;
+    }
+}
+@media (min-width: 790px) {
+    #myDIV {
+        width: 70%;
+        top: 120px;
+        left: -1000px;
+        background-color: #00FF80;
+        position: absolute;
+        opacity: 3;
+        vertical-align: middle;
+        animation: drop 2s linear forwards;
+    }
+}
+@media (max-width: 992px) and (min-width: 790px){
+    #myDIV2 {
+        top: 99px;
+        position: absolute;
+        background-color: #00FF80; 
+        width: 70%; 
+        vertical-align: middle;
+        height: 410px;
+        left: 100px;
+    }
+    #myDIV2 #labl1{
+        margin-top: 50px;
+    }
+    #myDIV2 h2 {
+        position: absolute;
+    }
+    #myDIV2 input{
+        margin-left: -33%;
+    }
+    #myDIV2 #btnclose{
+        position: absolute;
+        margin-left: 65%;
+    }
+    #myDIV2 hr{ 
+        position: absolute;
+        top: 160px;
+        margin-top: 85px;
+    }
+}
+@media (min-width: 993px) {
+    #myDIV2 {
+        top: 99px;
+        position: absolute;
+        background-color: #00FF80; 
+        width: 70%; 
+        height: 410px;
+        left: 200px;
+    }
+}
+@media (max-width: 789px) {
+    #myDIV2 {
+        top: 99px;
+        position: absolute;
+        background-color: #00FF80; 
+        width: 70%; 
+        vertical-align: middle;
+        height: 410px;
+        left: 100px;
+    }
+    #myDIV2 #labl1{
+        margin-top: 50px;
+    }
+    #myDIV2 h2 {
+        position: absolute;
+    }
+    #myDIV2 input{
+        margin-left: -33%;
+    }
+    #myDIV2 #btnclose{
+        position: absolute;
+        margin-left: 65%;
+    }
+    #myDIV2 hr{ 
+        position: absolute;
+        top: 160px;
+        margin-top: 85px;
+    }
+}
+/*.book::after {
+    animation: drop 8s linear forwards;
+}*/
+@keyframes drop {
+    0%{ transform: translateX(-1000px); }
+    70%{ transform: translateX(1250px); }
+    100%{ transform: translateX(1200px);}
+}
+@keyframes drops {
+    0%{ transform: translateX(-1000px); }
+    70%{ transform: translateX(1100px); }
+    100%{ transform: translateX(1080px);}
+}
+
+    #myDIV .form-group {
+        margin-left: 40px;
+        margin-top: 10px;
+        width: 80%;
+}
+
+
+/***scrollbar**/
+.scrollbar {
+float: left;
+height: 250px;
+overflow-y: scroll;
+margin-bottom: 25px;
+}
+.force-overflow {
+min-height: 450px;
+}
+.scrollbar-juicy-peach::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #F5F5F5;
+border-radius: 10px; }
+
+.scrollbar-juicy-peach::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; }
+
+.scrollbar-juicy-peach::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-image: -webkit-gradient(linear, left top, right top, from(#ffecd2), to(#fcb69f));
+background-image: -webkit-linear-gradient(left, #ffecd2 0%, #fcb69f 100%);
+background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); }
+
+/***scrollbar**/

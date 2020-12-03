@@ -7,15 +7,23 @@
   body {
     background-image:url('<?php echo url('/'); ?>/images/background/med1.jpg');
   }
-
+  @media(max-width: 1120px){
+    #patbt #stock button{
+        margin-right: 150px;
+    }
+  }
+ 
 </style>
 <div id="docpage" class="container">
     <div class="text-center">
         <h1>Life Care Pharmacy</h1>
     </div>
-    <div class="right">
-        <a href="/patHistory"><button class="btn btn right">stock</button></a>
-        <button type="button" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn right">Invoice</button>
+    <div id="patbutton" style="right: 1px;">
+        <div id="patbt">
+            <a id="stock" href="/patHistory"><button class="btn btn right">stock</button></a>
+            <a id=""><button type="button" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn right">Invoice</button></a>
+            <a href="/login" style="position: absolute; right: 10px;"><span class="glyphicon glyphicon-log-out"></span>  Log-out</a>
+        </div>
     </div>
     <div id="pharm" class="text-right" style="position: absolute;">
         <label>Date:</label><br>
@@ -48,7 +56,7 @@
                  
             </div>
             <div class="row">                        
-                <div class="col-lg-4 col-sm-5 ml-auto" class="right" style="margin-left: 68%; width: 32%;">
+                <div id="total" class="col-lg-4 col-sm-5 ml-auto" class="right">
                             <table class="table table-clear" style="outline-color: white;">
                                 <tbody>
                                     <tr>

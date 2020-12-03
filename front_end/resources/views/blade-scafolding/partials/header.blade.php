@@ -10,7 +10,7 @@
 
             <div id="navbar" class="navbar-collapse collapse" class="header-info">
                <ul class="nav navbar-nav">
-                        <li style="background: #A4A4A4;"><a href="/"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+                        <li style="background: #E6E6E6; border-radius: 10px;"><a href="/"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
                      </ul>
                   </div>
                </nav>

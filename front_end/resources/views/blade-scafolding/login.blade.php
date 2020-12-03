@@ -7,6 +7,8 @@
 <style type="text/css">
   body {
     background-image:url('<?php echo url('/'); ?>/images/background/login.jpg');
+    background-attachment: fixed;
+    background-size: cover;
   }
 </style>
 <div id="login" class="form" >
@@ -30,7 +32,7 @@
                             <div class="form-group" class="text-info">
                                 <p class="forgot"><a href="#">Forgot Password?</a></p>
                                 <a href="/regi" id="reg-link">Register here</a></p>
-                                <button class="button button-right"/>Log In</button>
+                                <button class="button button-right"/><a href="/patpage">Log In</a></button>
                             </div>
                             
                         </form>

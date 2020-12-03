@@ -6,18 +6,41 @@
 <style type="text/css">
   body {
     background-image:url('<?php echo url('/'); ?>/images/background/docpage.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
   }
-
+  @media(max-width: 550px){
+  #docpage #patbt #login {
+        font-size: 15px;
+    }
+  }
+  @media(min-width: 550px){
+  #docpage #patbt #login {
+        font-size: 19px;
+    }
+  }
 </style>
 <div id="docpage" class="container">
-    <div class="right">
-        <a href="/addPrscptn"><button class="btn btn right">Prescription</button></a>
-        <button type="button" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn right">My Details</button>
+    <div id="patbutton" style="right: 10px;">
+        <div id="patbt">
+        <a><button type="button" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn">My Details</button></a>
+        <a href="/addPrscptn" style="position: absolute;"><button class="btn btn right">Prescription</button></a>
+        <a id="login" href="/login" style="position: absolute; margin-left: 125px;"><span class="glyphicon glyphicon-log-out"></span>  Log-out</a>
+        </div>
     </div>
-
-    <div class="text-center" style="padding-top: 100px;"><h1>Working Period</h1></div>
+    <div style=" margin-top: -20px; position: absolute;">
+        <h2>Profile Photo</h2>
+        <img class="img" src="<?php echo url('/'); ?>/images/profile-photo/patphoto.png" height="120" width="130" alt="avatar" style=" cursor: pointer;">
+        <input type="file" name="image" accept="image/*" id="file" style="display: none;">
+        <p>
+            <label for="file" style="cursor: pointer;" >Upload Image</label>
+        </p>
+        <img id="output" width="200">
+     </div>
+    <div class="text-center" style="padding-top: 100px; z-index: -1;"><h1>Working Period</h1></div>
         <div class="container" class="text-center">
-            <div class="table-responsive" style="margin-top: 10px;">
+            <div class="table-responsive" style="margin-top: 35px;">
                 <table id="doctor_data" class="table table-bordered table-striped">
                     <thead>
                         <tr>

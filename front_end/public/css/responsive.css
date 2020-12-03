@@ -203,9 +203,9 @@
         z-index: 111;
     }
     .navbar-default .navbar-toggle {
-        border-color: #1f1f1f;
+        border-color: #3B0B24;
         color: #fff !important;
-        background-color: #1f1f1f !important;
+        background-color: #8A0886 !important;
     }
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-form {
